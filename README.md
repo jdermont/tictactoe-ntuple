@@ -7,7 +7,7 @@ Train N-Tuple Neural network for tic tac toe. The network allows the 1-ply cpu b
 > make
 > ./tictactoe-ntuple
 
-Firstly it generates all reachable positions and labels them accordingly (win = 1, draw = 0, lose = -1). Then N-Tuple network learns on those positions for 100 epochs and learning rate 0.01. Then various cpus are playing against each other. Example output:
+Firstly it generates all reachable positions (there are 5478 positions in tic tac toe) and labels them accordingly (win = 1, draw = 0, lose = -1). Then N-Tuple network learns on those positions for 100 epochs and learning rate 0.01. Then various cpus are playing against each other. Example output:
 
 ```
 generating data from games...
