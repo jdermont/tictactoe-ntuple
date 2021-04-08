@@ -144,7 +144,7 @@ void networkCpuVsCpuPly3() {
         int winner = game.getWinner();
         if (winner == cpu1.getPlayer()) {
             scores[0]++;
-        } else if (winner == cpu1.getPlayer()) {
+        } else if (winner == cpu2.getPlayer()) {
             scores[1]++;
         } else {
             scores[2]++;
@@ -184,7 +184,7 @@ void networkCpuVsPerfectCpu() {
         int winner = game.getWinner();
         if (winner == cpu1.getPlayer()) {
             scores[0]++;
-        } else if (winner == cpu1.getPlayer()) {
+        } else if (winner == cpu2.getPlayer()) {
             scores[1]++;
         } else {
             scores[2]++;
