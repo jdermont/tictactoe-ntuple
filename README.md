@@ -3,9 +3,11 @@ N-Tuple Neural Network for tic tac toe
 
 Train N-Tuple Neural network for tic tac toe. The network allows the 1-ply cpu become 'perfect' without exhaustive search. The N-Tuple consists all eight tic-tac-toe's row-of-3s, times 2 depending of whose side it is, so a total 432 (8\*54) weights (+ bias) in this network. Due to symmetries, it can be reduced to 270 (5\*54) weights.
 
-> qmake .
-> make
-> ./tictactoe-ntuple
+```
+qmake .
+make
+./tictactoe-ntuple
+```
 
 Firstly it generates all reachable positions (there are 5478 positions in tic tac toe) and labels them accordingly (win = 1, draw = 0, lose = -1). Then N-Tuple network learns on those positions for 100 epochs and learning rate 0.01. Then various cpus are playing against each other. Example output:
 
