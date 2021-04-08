@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+Makefile
+.qmake.stash
+tictactoe-ntuple
