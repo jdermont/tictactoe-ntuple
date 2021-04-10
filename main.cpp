@@ -19,6 +19,7 @@ void generateTrainingData() {
     auto solverData = gameSolver.getData();
     trainingData = vector<pair<vector<int>,float>>(solverData.begin(),solverData.end());
     cout << "there are " << trainingData.size() << " positions" << endl;
+    gameSolver.solveAllStates();
 }
 
 void trainNetwork() {
@@ -205,6 +206,13 @@ int main() {
     networkCpuVsRandom();
     networkCpuVsCpuPly3();
     networkCpuVsPerfectCpu();
+
+//    Game game;
+//    for (auto & m : game.getMoves()) {
+//        game.makeMove(m);
+//        cout << network.predict(game.getTuples()) << endl;
+//        game.undoMove();
+//    }
 
     return 0;
 }

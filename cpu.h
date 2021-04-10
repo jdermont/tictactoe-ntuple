@@ -140,6 +140,10 @@ private:
             n++;
         }
 
+//        for (auto & m : moves) {
+//            cout << m.move << ": " << m.score << endl;
+//        }
+
         return moves[rand() % n];
     }
 

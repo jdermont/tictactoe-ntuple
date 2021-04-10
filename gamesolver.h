@@ -68,8 +68,9 @@ private:
             }
         }
 
-        data[game.getTuples()] = color * output;
-        tt[game.getHash()] = color * output;
+        // or = color * output? need to think about it. either way it works o.O
+        data[game.getTuples()] = output;
+        tt[game.getHash()] = output;
 
         return output;
     }
